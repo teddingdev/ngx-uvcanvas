@@ -1,0 +1,19 @@
+<mat-nav-list>
+  <ng-container *ngFor="let nav of navList; let i = index; last as last">
+    <mat-list-item
+      *ngIf="nav.type === 'component'; else elseBlock"
+      class="nav-2nd-level"
+      [activated]="getActivated(nav.value)"
+      (click)="activatedPath = nav.value"
+      [routerLink]="nav.value"
+    >
+      <mat-icon *ngIf="nav.icon" matListItemIcon>{{ nav.icon }}</mat-icon>
+      <span matListItemLine>
+        {{ nav.name }}
+      </span>
+    </mat-list-item>
+    <ng-template #elseBlock>
+      <h3 class="nav-1st-level">{{ nav.name }}</h3>
+    </ng-template>
+  </ng-container>
+</mat-nav-list>

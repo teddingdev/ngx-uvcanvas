@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "/projects/site/src/styles/variables";
+
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  ::before {
+    content: "";
+    display: table;
+    height: 0;
+  }
+}
+
+.background {
+  height: 100%;
+  width: calc(100% + 32px * 2);
+  margin: 0 -32px;
+  position: absolute;
+  top: 0;
+  overflow: clip;
+  filter: blur(20px);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: "";
+}

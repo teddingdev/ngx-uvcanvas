@@ -1,0 +1,29 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "/projects/site/src/styles/variables";
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  background-color: map.get(variables.$background-light, background);
+  // @debug map.get(variables.$background-light, background);
+  @media (prefers-color-scheme: dark) {
+    background-color: map.get(variables.$background-dark, background);
+  }
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.app-toolbar {
+  flex: 0 auto;
+}
+
+.app-content {
+  flex: 1 auto;
+}
+
+.app-footer {
+  flex: 0 auto;
+  display: flex;
+  justify-content: center;
+}

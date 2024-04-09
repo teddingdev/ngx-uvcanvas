@@ -1,9 +1,9 @@
 {
-  "name": "ng-uvcanvas",
+  "name": "ngx-uvcanvas",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -12,16 +12,24 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.0.0",
+    "@angular/cdk": "^17.2.2",
     "@angular/common": "^17.0.0",
     "@angular/compiler": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@angular/forms": "^17.0.0",
+    "@angular/material": "^17.2.2",
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.2.3",
+    "animate.css": "^4.1.1",
     "express": "^4.18.2",
+    "marked": "^9.1.6",
+    "ngx-markdown": "^17.2.0",
+    "ngx-uvcanvas": "file:./dist/ngx-uvcanvas",
+    "ogl": "^1.0.6",
+    "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
@@ -41,5 +49,8 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^17.2.0",
     "typescript": "~5.2.2"
+  },
+  "volta": {
+    "node": "20.11.1"
   }
 }

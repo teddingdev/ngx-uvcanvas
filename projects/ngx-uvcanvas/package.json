@@ -1,6 +1,18 @@
 {
   "name": "ngx-uvcanvas",
   "version": "0.0.1",
+  "description": "An Angular component library that offers a diverse range of dynamic canvases pre-built.",
+  "keywords": [
+    "Angular",
+    "canvas",
+    "component",
+    "dynamic canvases",
+    "dynamic backgaround"
+  ],
+  "author": "Ted.Ding",
+  "license": "MIT",
+  "repository": "https://github.com/teddingdev/ngx-uvcanvas",
+  "homepage": "ngx-uvcanvans.ife.app",
   "peerDependencies": {
     "@angular/common": "^17.2.0",
     "@angular/core": "^17.2.0"

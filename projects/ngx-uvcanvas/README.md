@@ -1,24 +1,29 @@
-# NgxUvcanvas
+# ngx-uvcanvas
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+## install
 
-## Code scaffolding
+### npm
+```bash
+npm i ngx-uvcanvas --save
+```
+### yarn
+```bash
+yarn add ngx-uvcanvas
+```
+### npm
+```bash
+pnpm install ngx-uvcanvas
+```
 
-Run `ng generate component component-name --project ngx-uvcanvas` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-uvcanvas`.
-> Note: Don't forget to add `--project ngx-uvcanvas` or else it will be added to the default project in your `angular.json` file. 
+## uesage
 
-## Build
-
-Run `ng build ngx-uvcanvas` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngx-uvcanvas`, go to the dist folder `cd dist/ngx-uvcanvas` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-uvcanvas` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+``` typescript
+import {
+  ZenithoComponent,
+  LumiflexComponent,
+  NovatrixComponent,
+  OpulentoComponent,
+  VelustroComponent,
+  TranquiluxeComponent,
+} from 'ngx-uvcanvas/ui';
+```

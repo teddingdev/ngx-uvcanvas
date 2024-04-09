@@ -1,0 +1,219 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "/projects/site/src/styles/theme";
+
+$primary-light: map.get(theme.$light-theme, primary);
+$primary-dark: map.get(theme.$dark-theme, primary);
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.logo-ngx-uvcanvas {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-uvcanvas {
+  width: 18px;
+  height: 18px;
+  margin: 0 4px;
+}
+
+.logo-uvcanvas-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  padding: 48px 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: mat.get-color-from-palette($primary-light);
+  @media (prefers-color-scheme: dark) {
+    background-color: mat.get-color-from-palette($primary-dark);
+  }
+  color: #fff;
+  position: relative;
+  justify-content: space-around;
+  > * {
+    z-index: 1;
+  }
+  &:after {
+    content: " ";
+    background-image: url("../../../assets/svg/icon_angular.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+}
+
+.title {
+  // padding: 64px 0 16px 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  mat-icon {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.npm-install {
+  margin-top: 24px;
+  text-align: center;
+  code {
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 8px;
+  }
+}
+
+.sub-title {
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  a {
+    padding: 0 4px;
+    color: #fff;
+  }
+}
+
+.more {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.extra {
+}
+
+.slide-wrap {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 48px;
+}
+
+.slide-stage {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  max-width: 320px;
+  height: 250px;
+  transform-style: preserve-3d;
+  perspective: 180px;
+  perspective-origin: 50% -50%;
+  animation-duration: 1.2s;
+  animation-name: flyin;
+  animation-timing-function: ease-out;
+  &::after {
+    content: " ";
+    clear: both;
+    display: block;
+  }
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  left: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+}
+
+$gutter: 24px;
+$start: 10px;
+
+.slide-0 {
+  transform: translateZ($start);
+  filter: blur(16px);
+}
+
+.slide-1 {
+  transform: translateZ($start + $gutter * 1);
+  filter: blur(8px);
+}
+
+.slide-2 {
+  transform: translateZ($start + $gutter * 2);
+  filter: blur(4px);
+}
+
+.slide-3 {
+  transform: translateZ($start + $gutter * 3);
+}
+
+@keyframes flyin {
+  from {
+    perspective: 30px;
+  }
+
+  to {
+    perspective: 180px;
+  }
+}
+
+.components {
+  padding: 0 16px;
+  text-align: center;
+  h2 {
+    @media (prefers-color-scheme: dark) {
+      color: #fff;
+    }
+  }
+  .preview-part {
+    width: 100%;
+    text-align: center;
+  }
+  .preview-all {
+    margin: 16px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer {
+  padding: 16px;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav #drawer mode="side" opened fixedInViewport>
+    <div class="doc-nav">
+      <app-doc-nav [activatedUrl]="url"></app-doc-nav>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

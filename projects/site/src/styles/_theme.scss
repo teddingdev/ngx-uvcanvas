@@ -1,0 +1,52 @@
+@use "@angular/material" as mat;
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+// mat.$pink-palette
+// mat.$indigo-palette
+// mat.$purple-palette
+// mat.$deep-purple-palette
+// mat.$blue-palette
+// mat.$light-blue-palette
+// mat.$cyan-palette
+// mat.$green-palette
+// mat.$light-green-palette
+// mat.$lime-palette
+// mat.$yellow-palette
+// mat.$amber-palette
+// mat.$orange-palette
+// mat.$deep-orange-palette
+// mat.$brown-palette
+// mat.$grey-palette
+// mat.$blue-grey-palette
+// mat.$gray-palette
+// mat.$blue-gray-palette
+
+// The warn palette is optional (defaults to red).
+$red: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+
+$light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: mat.define-palette(mat.$blue-palette, 700, 500, 900),
+      accent: mat.define-palette(mat.$pink-palette),
+      warn: mat.define-palette(mat.$red-palette),
+    ),
+  )
+);
+
+$dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: mat.define-palette(mat.$purple-palette, 700, 500, 900),
+      accent: mat.define-palette(mat.$green-palette),
+      warn: mat.define-palette(mat.$red-palette),
+    ),
+    // Only include `typography` and `density` in the default dark theme.
+    // typography: mat.define-typography-config(),
+    // density: 0,,,,,,,,,,,,,,,,,,,
+  )
+);

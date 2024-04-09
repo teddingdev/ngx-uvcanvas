@@ -6,8 +6,8 @@
     "ngx-uvcanvas": {
       "projectType": "library",
       "root": "projects/ngx-uvcanvas",
-      "sourceRoot": "projects/ngx-uvcanvas/src",
-      "prefix": "lib",
+      "sourceRoot": "projects/ngx-uvcanvas",
+      "prefix": "nuc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -47,7 +47,74 @@
       "sourceRoot": "projects/site/src",
       "prefix": "app",
       "architect": {
+        "copy-file": {
+          "builder": "@teddingdev/builders:copy-2",
+          "options": {
+            "source": "package.json",
+            "destination": "package-copy.json"
+          }
+        },
         "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/site",
+            "index": "projects/site/src/index.html",
+            "browser": "projects/site/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/site/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/site/src/favicon.ico",
+              "projects/site/src/assets"
+            ],
+            "styles": [
+              "projects/site/src/styles.scss",
+              "node_modules/prismjs/themes/prism-okaidia.css",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
+              "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./"
+              ]
+            },
+            "scripts": [
+              "node_modules/prismjs/prism.js",
+              "node_modules/prismjs/components/prism-css.min.js",
+              "node_modules/prismjs/components/prism-typescript.min.js",
+              "node_modules/prismjs/components/prism-csharp.min.js",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
+              "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js"
+            ],
+            "server": "projects/site/src/main.server.ts"
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "build-ssr": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/site",
@@ -128,6 +195,7 @@
               "projects/site/src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/site/src/styles.scss"
             ],
             "scripts": []

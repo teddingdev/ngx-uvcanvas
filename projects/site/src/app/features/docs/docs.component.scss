@@ -1,0 +1,31 @@
+@use "/projects/site/src/styles/variables";
+
+:host {
+  height: 100%;
+  display: block;
+}
+
+.container {
+  height: 100%;
+}
+
+.doc-nav {
+  padding-top: variables.$toobar-standard-height-light;
+
+  // height: calc(100% - variables.$toobar-standard-height-light);
+  // @media (prefers-color-scheme: dark) {
+  //   height: calc(100% - variables.$toobar-standard-height-dark);
+  // }
+
+  // @media (max-width: 599px) {
+  //   height: calc(100% - variables.$toobar-mobile-height-light);
+  //   @media (prefers-color-scheme: dark) {
+  //     height: calc(100% - variables.$toobar-mobile-height-dark);
+  //   }
+  // }
+}
+
+.content {
+  padding: 0 32px 32px;
+  height: 100%;
+}

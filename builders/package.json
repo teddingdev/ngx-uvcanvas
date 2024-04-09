@@ -1,0 +1,13 @@
+{
+  "name": "@teddingdev/builders",
+  "version": "1.0.0",
+  "description": "Builder for copying files",
+  "builders": "builders.json",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@angular-devkit/architect": "^0.1702.3",
+    "@angular-devkit/core": "^17.2.3"
+  }
+}

@@ -1,0 +1,31 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "/projects/site/src/styles/theme";
+
+$primary-light: map.get(theme.$light-theme, primary);
+$primary-dark: map.get(theme.$dark-theme, primary);
+
+$toolbar-tooken-light: map.get(
+  mat.m2-tokens-from-theme(theme.$light-theme),
+  (mat, toolbar)
+);
+$toolbar-tooken-dark: map.get(
+  mat.m2-tokens-from-theme(theme.$light-theme),
+  (mat, toolbar)
+);
+
+$toobar-standard-height-light: map.get($toolbar-tooken-light, standard-height);
+$toobar-standard-height-dark: map.get($toolbar-tooken-light, standard-height);
+
+$toobar-mobile-height-light: map.get($toolbar-tooken-light, mobile-height);
+$toobar-mobile-height-dark: map.get($toolbar-tooken-light, mobile-height);
+
+$primary-light: map.get(theme.$light-theme, primary);
+$accent-light: map.get(theme.$light-theme, accent);
+$foreground-light: map.get(theme.$light-theme, foreground);
+$background-light: map.get(theme.$light-theme, background);
+
+$primary-dark: map.get(theme.$dark-theme, primary);
+$accent-dark: map.get(theme.$dark-theme, accent);
+$foreground-dark: map.get(theme.$dark-theme, foreground);
+$background-dark: map.get(theme.$dark-theme, background);

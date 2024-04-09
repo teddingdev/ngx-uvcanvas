@@ -2,6 +2,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -10,9 +12,23 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
+    // "paths": {
+    //   "ngx-uvcanvas": [
+    //     "dist/ngx-uvcanvas"
+    //   ],
+    // },
     "paths": {
       "ngx-uvcanvas": [
-        "./dist/ngx-uvcanvas"
+        "./project/ngx-uvcanvas"
+      ],
+      "ngx-uvcanvas/*": [
+        "./project/ngx-uvcanvas/*"
+      ],
+      "@services/*": [
+        "./projects/site/src/app/services/*"
+      ],
+      "@components/*": [
+        "./projects/site/src/app/components/*"
       ]
     },
     "esModuleInterop": true,
@@ -27,7 +43,7 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
