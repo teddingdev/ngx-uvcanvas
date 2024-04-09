@@ -1,0 +1,38 @@
+<svg width="252" height="20" viewBox="0 0 252 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <title>generated - date</title>
+    <g id="Section">
+      <g id="Group">
+        <g id="Group_2">
+          <path id="workflow-bg"
+            d="M0 3C0 1.3431 1.38731 0 3.09876 0H186V20H3.09876C1.38731 20 0 18.6569 0 17V3Z"
+            fill="url(#workflow-fill)" />
+          <text id="date" fill="#010101" fill-opacity="0.3" xml:space="preserve"
+            style="white-space: pre" font-family="'DejaVu Sans',Verdana,Geneva,sans-serif" font-size="11" letter-spacing="0em"><tspan x="22.7242" y="15.3081">2024-04-09 16:56:39 +0800</tspan></text>
+          <text id="date_2" fill="white" xml:space="preserve"
+            style="white-space: pre" font-family="'DejaVu Sans',Verdana,Geneva,sans-serif" font-size="11" letter-spacing="0em"><tspan x="22.7242" y="14.3081">2024-04-09 16:56:39 +0800</tspan></text>
+        </g>
+        <g id="Group_3">
+          <path id="state-bg"
+            d="M186 0H248.051C249.781 0 251.185 1.343 251.185 3V17C251.185 18.657 249.782 20 248.051 20H186V0Z"
+            fill="url(#state-fill)" />
+          <text id="generated" fill="#010101" fill-opacity="0.3" xml:space="preserve"
+            style="white-space: pre" font-family="'DejaVu Sans',Verdana,Geneva,sans-serif" font-size="11" letter-spacing="0em"><tspan x="190" y="14.3081">generated</tspan></text>
+          <text id="generated_2" fill="white" xml:space="preserve" style="white-space: pre"
+            font-family="'DejaVu Sans',Verdana,Geneva,sans-serif" font-size="11" letter-spacing="0em"><tspan x="190" y="13.3081">generated</tspan></text>
+        </g>
+        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+          d="M11.2607 3C7.30101 3 4.09479 6.132 4.09479 10C4.09409 11.4693 4.56699 12.9015 5.4464 14.0936C6.32581 15.2856 7.56709 16.1769 8.9942 16.641C9.3525 16.703 9.48762 16.493 9.48762 16.309C9.48762 16.143 9.47739 15.591 9.47739 15.005C7.67773 15.329 7.21195 14.576 7.06863 14.183C6.98776 13.981 6.63868 13.36 6.33464 13.193C6.08383 13.063 5.72554 12.739 6.3244 12.73C6.88948 12.721 7.29282 13.238 7.42692 13.448C8.07185 14.506 9.10169 14.208 9.51424 14.025C9.57669 13.57 9.76505 13.264 9.97081 13.089C8.37691 12.914 6.71033 12.31 6.71033 9.633C6.71033 8.871 6.98776 8.241 7.44535 7.751C7.37369 7.576 7.12288 6.859 7.51701 5.896C7.51701 5.896 8.11689 5.713 9.48762 6.614C10.071 6.45609 10.6737 6.37669 11.2791 6.378C11.8845 6.37669 12.4872 6.45609 13.0706 6.614C14.4403 5.704 15.0412 5.896 15.0412 5.896C15.4353 6.859 15.1845 7.576 15.1128 7.751C15.5694 8.241 15.8468 8.863 15.8468 9.633C15.8468 12.319 14.1721 12.913 12.5771 13.089C12.8372 13.308 13.0614 13.728 13.0614 14.384C13.0614 15.32 13.0521 16.073 13.0521 16.309C13.0521 16.493 13.1862 16.711 13.5445 16.641C14.9671 16.172 16.2033 15.279 17.0791 14.0876C17.9549 12.8963 18.4261 11.4667 18.4265 10C18.4265 6.133 15.2193 3 11.2607 3Z"
+          fill="#959DA5" />
+      </g>
+    </g>
+    <defs>
+      <linearGradient id="workflow-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop stop-color="#444D56" offset="0%"></stop>
+        <stop stop-color="#24292E" offset="100%"></stop>
+      </linearGradient>
+      <linearGradient id="state-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop stop-color="#34D058" offset="0%"></stop>
+        <stop stop-color="#28A745" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
