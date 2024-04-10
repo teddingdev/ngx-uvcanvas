@@ -27,5 +27,11 @@
 
 .content {
   padding: 0 32px 32px;
-  height: 100%;
+  position: relative;
+}
+
+.menu-btn {
+  position: static;
+  right: 0;
+  top: 0;
 }

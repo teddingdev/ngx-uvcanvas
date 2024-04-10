@@ -2,12 +2,6 @@
 @use "@angular/material" as mat;
 @use "/projects/site/src/styles/variables";
 
-:host {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
 .container {
   height: 100%;
   width: 100%;

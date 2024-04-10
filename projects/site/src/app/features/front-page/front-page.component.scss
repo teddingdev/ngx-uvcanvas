@@ -1,4 +1,6 @@
 @use "sass:map";
+@use "sass:math";
+@use "sass:list";
 @use "@angular/material" as mat;
 @use "/projects/site/src/styles/theme";
 
@@ -119,34 +121,26 @@ $primary-dark: map.get(theme.$dark-theme, primary);
   gap: 12px;
 }
 
-.extra {
-}
-
 .slide-wrap {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  padding-top: 48px;
+  padding-top: 32px;
 }
 
 .slide-stage {
   position: relative;
   display: inline-block;
-  width: 50%;
-  max-width: 320px;
-  height: 250px;
-  transform-style: preserve-3d;
-  perspective: 180px;
-  perspective-origin: 50% -50%;
-  animation-duration: 1.2s;
-  animation-name: flyin;
-  animation-timing-function: ease-out;
+  width: 90%;
+  max-width: 640px;
+  height: 240px;
   &::after {
     content: " ";
     clear: both;
     display: block;
   }
 }
+
 
 .slide {
   width: 100%;
@@ -155,42 +149,38 @@ $primary-dark: map.get(theme.$dark-theme, primary);
   text-align: center;
   display: inline-block;
   left: 0;
+  border-radius: 12px;
+  overflow: hidden;
   img {
     width: 100%;
     height: 100%;
-    border-radius: 12px;
   }
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.13, 0.6, 0.26, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 0.3;
 }
 
-$gutter: 24px;
-$start: 10px;
+$index_list: 0, 1, 2, 3;
+$translateBase: -55px;
 
-.slide-0 {
-  transform: translateZ($start);
-  filter: blur(16px);
-}
-
-.slide-1 {
-  transform: translateZ($start + $gutter * 1);
-  filter: blur(8px);
-}
-
-.slide-2 {
-  transform: translateZ($start + $gutter * 2);
-  filter: blur(4px);
-}
-
-.slide-3 {
-  transform: translateZ($start + $gutter * 3);
-}
-
-@keyframes flyin {
-  from {
-    perspective: 30px;
+@each $idx in $index_list {
+  .slide-#{$idx} {
+    animation-name: fly_in_#{$idx};
+    filter: blur($idx * 2px + 2px);
+    z-index: -$idx;
+    transform: translateY(100%);
   }
 
-  to {
-    perspective: 180px;
+  @keyframes fly_in_#{$idx} {
+    from {
+      transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(120px + ($translateBase * $idx))
+        scale(100% - 15% * $idx);
+    }
   }
 }
 
