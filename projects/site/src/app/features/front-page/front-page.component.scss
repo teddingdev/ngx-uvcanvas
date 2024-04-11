@@ -141,7 +141,6 @@ $primary-dark: map.get(theme.$dark-theme, primary);
   }
 }
 
-
 .slide {
   width: 100%;
   height: 100%;
@@ -158,7 +157,6 @@ $primary-dark: map.get(theme.$dark-theme, primary);
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.13, 0.6, 0.26, 1);
   animation-fill-mode: forwards;
-  animation-delay: 0.3;
 }
 
 $index_list: 0, 1, 2, 3;
@@ -170,6 +168,7 @@ $translateBase: -55px;
     filter: blur($idx * 2px + 2px);
     z-index: -$idx;
     transform: translateY(100%);
+    animation-delay: 0.1s - ($idx * 0.02s);
   }
 
   @keyframes fly_in_#{$idx} {
@@ -203,7 +202,19 @@ $translateBase: -55px;
   }
 }
 
-.footer {
-  padding: 16px;
-  text-align: center;
+.arrow_forward {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes bounce {
+  0% {
+    left: -3px;
+  }
+  100% {
+    left: 5px;
+  }
 }

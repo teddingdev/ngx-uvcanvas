@@ -27,5 +27,9 @@ $background-light: map.get(theme.$light-theme, background);
 
 $primary-dark: map.get(theme.$dark-theme, primary);
 $accent-dark: map.get(theme.$dark-theme, accent);
+
 $foreground-dark: map.get(theme.$dark-theme, foreground);
 $background-dark: map.get(theme.$dark-theme, background);
+
+$primary-background-color-light: mat.get-color-from-palette($primary-light);
+$primary-background-color-dark: mat.get-color-from-palette($primary-dark);

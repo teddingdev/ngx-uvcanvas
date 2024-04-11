@@ -15,9 +15,8 @@ body {
     "Hiragino Sans GB", "PingFang SC";
 }
 app-root {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  min-height: 100%;
 }
 
 .spacer {

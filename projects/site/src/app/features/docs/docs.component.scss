@@ -1,28 +1,14 @@
 @use "/projects/site/src/styles/variables";
 
-:host {
-  height: 100%;
-  display: block;
-}
-
 .container {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .doc-nav {
   padding-top: variables.$toobar-standard-height-light;
-
-  // height: calc(100% - variables.$toobar-standard-height-light);
-  // @media (prefers-color-scheme: dark) {
-  //   height: calc(100% - variables.$toobar-standard-height-dark);
-  // }
-
-  // @media (max-width: 599px) {
-  //   height: calc(100% - variables.$toobar-mobile-height-light);
-  //   @media (prefers-color-scheme: dark) {
-  //     height: calc(100% - variables.$toobar-mobile-height-dark);
-  //   }
-  // }
 }
 
 .content {
@@ -31,7 +17,29 @@
 }
 
 .menu-btn {
-  position: static;
+  position: fixed;
+  bottom: 100%;
   right: 0;
-  top: 0;
+  z-index: 3;
+  top: variables.$toobar-standard-height-light;
+  @media (prefers-color-scheme: dark) {
+    top: variables.$toobar-standard-height-dark;
+  }
+
+  @media (max-width: 599px) {
+    top: variables.$toobar-mobile-height-light;
+    @media (prefers-color-scheme: dark) {
+      top: variables.$toobar-mobile-height-dark;
+    }
+  }
+
+  // background-color: #fff;
+  // background-color: variables.$background-color-light;
+  // @media (prefers-color-scheme: dark) {
+  //   background-color: variables.$background-color-dark;
+  // }
+}
+
+mat-sidenav-container {
+  flex: 1 auto;
 }

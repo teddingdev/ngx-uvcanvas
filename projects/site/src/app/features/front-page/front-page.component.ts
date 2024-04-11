@@ -28,12 +28,13 @@ import { MarkdownModule, provideMarkdown } from 'ngx-markdown';
 
 import { BreakpointService } from '@services/public_api';
 import { AllComponentsComponent } from '@components/all-components/all-components.component';
+import { FooterComponent } from '@components/footer/footer.component';
 
 const MatModule = [
   MatIconModule,
   MatButtonModule,
-  MatToolbarModule,
-  MatGridListModule,
+  // MatToolbarModule,
+  // MatGridListModule,
 ];
 
 const Components = [
@@ -50,12 +51,13 @@ const Components = [
   standalone: true,
   preserveWhitespaces: true,
   imports: [
+    ...MatModule,
+    ...Components,
     NgStyle,
     UpperCasePipe,
     RouterModule,
     MarkdownModule,
-    ...MatModule,
-    ...Components,
+    FooterComponent,
     AllComponentsComponent,
   ],
   providers: [provideMarkdown()],

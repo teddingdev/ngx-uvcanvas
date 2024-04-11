@@ -46,6 +46,7 @@ import { DocInstallationComponent } from './components/doc-installation/doc-inst
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
 import { AllComponentsComponent } from '@components/all-components/all-components.component';
 import { DocChangelogComponent } from './components/doc-changelog/doc-changelog.component';
+import { FooterComponent } from '@components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -60,6 +61,7 @@ import { DocChangelogComponent } from './components/doc-changelog/doc-changelog.
     VelustroComponent,
     TranquiluxeComponent,
     AllComponentsComponent,
+    FooterComponent
   ],
   declarations: [
     DocsComponent,

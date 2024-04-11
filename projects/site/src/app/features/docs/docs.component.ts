@@ -32,6 +32,15 @@ export class DocsComponent {
     ['XLarge', true],
   ]);
 
+  demoColsMap = new Map([
+    ['Unknown', 2],
+    ['XSmall', 2],
+    ['Small', 2],
+    ['Medium', 3],
+    ['Large', 3],
+    ['XLarge', 3],
+  ]);
+
   menuOpened = true;
 
   constructor(
