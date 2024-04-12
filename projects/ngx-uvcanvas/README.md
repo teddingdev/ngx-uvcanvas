@@ -1,4 +1,9 @@
-# ngx-uvcanvas
+[![github-pages](https://github.com/teddingdev/ngx-uvcanvas/actions/workflows/github-pages.yaml/badge.svg)](https://github.com/teddingdev/ngx-uvcanvas/actions/workflows/github-pages.yml)
+[![pages-build-deployment](https://github.com/teddingdev/ngx-uvcanvas/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/teddingdev/ngx-uvcanvas/actions/workflows/pages/pages-build-deployment)
+
+# NgxUvcanvas
+
+> An Angular component library that offers a diverse range of dynamic canvases pre-built. [Docs Preview](https://ngx-uvcanvas.ife.app)
 
 ## install
 

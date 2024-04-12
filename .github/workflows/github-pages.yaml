@@ -97,7 +97,7 @@ jobs:
               isAtAll: true
               },
             "text": {
-              "content": "#### Github-actions[bot] Notification #### \n*项目名称： ngx-uvcanvas.ife.app \n*日期： '"$(date +%Y-%m-%d\ %H:%M:%S\ %z)"' \n*路径： '"$(pwd)"' \n*Git地址： \n'"$(git remote -v)"' \n*分支： '"$(git name-rev --name-only HEAD)"' \n*最后提交： \n'"$(git show -s)"' \n*Build机器信息： \n'"$(uname -a)"' \n*Build机器IP： \n'"$(ip address | grep 'inet' | awk '{print $2}')"' \n\n我就是我, 是颜色不一样的烟火"
+              "content": "#### Github-actions[bot] Notification #### \n*项目名称： ngx-uvcanvas \n*日期： '"$(date +%Y-%m-%d\ %H:%M:%S\ %z)"' \n*路径： '"$(pwd)"' \n*Git地址： \n'"$(git remote -v)"' \n*分支： '"$(git name-rev --name-only HEAD)"' \n*最后提交： \n'"$(git show -s)"' \n*Build机器信息： \n'"$(uname -a)"' \n*Build机器IP： \n'"$(ip address | grep 'inet' | awk '{print $2}')"' \n\n我就是我, 是颜色不一样的烟火"
               }
             }'
 
@@ -107,7 +107,7 @@ jobs:
           curl --location $RENDER_BARK_SERVER'/push' \
           --header 'Content-Type: application/json; charset=utf-8' \
           --data '{
-          "body": "ngx-uvcanvas.ife.app build completed ",
+          "body": "ngx-uvcanvas build completed ",
           "title": "Github-actions[bot]",
           "device_key": "bark",
           "icon": "https://github.com/fluidicon.png",
