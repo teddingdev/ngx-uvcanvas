@@ -1,9 +1,11 @@
 <div class="container">
   <mat-toolbar color="primary" class="toolbar">
     <a mat-button routerLink="/">
-      <mat-icon [inline]="true" svgIcon="icon_angular"></mat-icon>
-      <mat-icon [inline]="true" svgIcon="icon_uvcanvas"></mat-icon>
-      <span>{{ "canvas" | uppercase }}</span>
+      <div class="logo">
+        <img src="../../../assets/svg/icon_angular_wht.svg" style="height: 100%" />
+        <img src="../../../assets/svg/icon_uvcanvas_wht.svg" style="height: 100%" />
+        <span>{{ "canvas" | uppercase }}</span>
+      </div>
     </a>
     <span class="spacer"></span>
     <!-- <button mat-icon-button>

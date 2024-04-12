@@ -107,7 +107,7 @@ jobs:
           curl --location $RENDER_BARK_SERVER'/push' \
           --header 'Content-Type: application/json; charset=utf-8' \
           --data '{
-          "body": "tedding.dev build completed ",
+          "body": "ngx-uvcanvas.ife.app build completed ",
           "title": "Github-actions[bot]",
           "device_key": "bark",
           "icon": "https://github.com/fluidicon.png",
