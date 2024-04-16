@@ -15,6 +15,7 @@ import { DocChangelogComponent } from './components/doc-changelog/doc-changelog.
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
 import { DocExampleComponent } from './components/doc-example/doc-example.component';
 import { DocForestComponent } from './components/doc-forest/doc-forest.component';
+import { DocAuthorComponent } from './components/doc-author/doc-author.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,10 @@ const routes: Routes = [
       {
         path: 'all-components',
         component: DocAllPreviewComponent,
+      },
+      {
+        path: 'author',
+        component: DocAuthorComponent,
       },
       {
         path: 'component',

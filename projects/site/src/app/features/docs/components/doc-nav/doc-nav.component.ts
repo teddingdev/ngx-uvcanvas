@@ -130,5 +130,11 @@ export class DocNavComponent {
       value: 'changelog',
       activated: false,
     },
+    {
+      type: 'component',
+      name: '关于作者',
+      value: 'author',
+      activated: false,
+    },
   ];
 }

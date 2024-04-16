@@ -40,7 +40,7 @@ import {
   OpulentoComponent,
   VelustroComponent,
   TranquiluxeComponent,
-  ForestComponent
+  ForestComponent,
 } from 'ngx-uvcanvas/ui';
 import { DocInstallationComponent } from './components/doc-installation/doc-installation.component';
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
@@ -49,6 +49,7 @@ import { DocChangelogComponent } from './components/doc-changelog/doc-changelog.
 import { FooterComponent } from '@components/footer/footer.component';
 import { DocExampleComponent } from './components/doc-example/doc-example.component';
 import { DocForestComponent } from './components/doc-forest/doc-forest.component';
+import { DocAuthorComponent } from './components/doc-author/doc-author.component';
 
 @NgModule({
   imports: [
@@ -80,7 +81,8 @@ import { DocForestComponent } from './components/doc-forest/doc-forest.component
     DocVelustroComponent,
     DocZenithoComponent,
     DocExampleComponent,
-    DocForestComponent
+    DocForestComponent,
+    DocAuthorComponent,
   ],
 })
 export class DocsModule {}

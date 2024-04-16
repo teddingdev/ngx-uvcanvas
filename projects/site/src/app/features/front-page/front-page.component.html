@@ -1,8 +1,5 @@
 <div class="main">
-  <div
-    class="title"
-    [ngStyle]="{ 'flex-direction': titleDirection.get(currentScreenSize) }"
-  >
+  <div class="title" [ngStyle]="{ 'flex-direction': titleDirection.get(currentScreenSize) }">
     <div>Angular</div>
     <div class="logo-uvcanvas-main">
       <mat-icon svgIcon="icon_uvcanvas"></mat-icon>
@@ -24,6 +21,11 @@
     <span> ，使用</span>
     <a href="https://angular.dev/" target="_blank"> Angular </a>
     <span>实现。</span>
+  </div>
+
+  <div class="desc">
+    <span>CREATED BY</span>
+    <a href="https://tedding.dev">TED.DING</a>
   </div>
 
   <div class="more">
@@ -61,16 +63,10 @@
   <div class="components">
     <h2>Components</h2>
     <div class="preview-part">
-      <app-all-components
-        [cols]="demoColsMap.get(currentScreenSize) || 2"
-      ></app-all-components>
+      <app-all-components [cols]="demoColsMap.get(currentScreenSize) || 2"></app-all-components>
     </div>
     <div class="preview-all">
-      <button
-        mat-raised-button
-        color="accent"
-        routerLink="/docs/all-components"
-      >
+      <button mat-raised-button color="accent" routerLink="/docs/all-components">
         <mat-icon>sentiment_satisfied</mat-icon>
         查看更多
       </button>
