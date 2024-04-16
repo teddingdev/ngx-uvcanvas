@@ -26,7 +26,7 @@
     "express": "^4.18.2",
     "marked": "^9.1.6",
     "ngx-markdown": "^17.2.0",
-    "ngx-uvcanvas": "file:./dist/ngx-uvcanvas",
+    "ngx-uvcanvas": "file:dist/ngx-uvcanvas",
     "ogl": "^1.0.6",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",

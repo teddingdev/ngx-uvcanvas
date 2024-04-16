@@ -113,6 +113,12 @@ export class DocNavComponent {
       activated: false,
     },
     {
+      type: 'component',
+      name: 'nuc-forest',
+      value: 'component/forest',
+      activated: false,
+    },
+    {
       type: 'separateor',
       // name: 'ChangeLog',
       name: '其他',

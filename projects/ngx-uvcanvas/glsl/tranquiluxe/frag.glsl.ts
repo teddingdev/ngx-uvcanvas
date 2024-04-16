@@ -1,4 +1,5 @@
-export const frag = `precision highp float;
+export const frag = `
+precision highp float;
 
 uniform float uTime;
 uniform vec3 uColor;
@@ -80,14 +81,13 @@ const mat2 mtx = mat2( 0.80,  0.60, -0.60,  0.80 );
 float fbm( vec2 p )
 {
     float f = 0.0;
-    float time = uTime * .25;
 
-    f += 0.500000*noise( p + time  ); p = mtx*p*2.02;
+    f += 0.500000*noise( p + uTime  ); p = mtx*p*2.02;
     f += 0.031250*noise( p ); p = mtx*p*2.01;
     f += 0.250000*noise( p ); p = mtx*p*2.03;
     f += 0.125000*noise( p ); p = mtx*p*2.01;
     f += 0.062500*noise( p ); p = mtx*p*2.04;
-    f += 0.015625*noise( p + sin(time) );
+    f += 0.015625*noise( p + sin(uTime) );
 
     return f/0.96875;
 }

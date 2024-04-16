@@ -9,6 +9,7 @@ import {
   OpulentoComponent,
   VelustroComponent,
   TranquiluxeComponent,
+  ForestComponent
 } from 'ngx-uvcanvas/ui';
 
 @Component({
@@ -24,6 +25,7 @@ import {
     OpulentoComponent,
     VelustroComponent,
     TranquiluxeComponent,
+    ForestComponent,
     RouterModule,
   ],
 })

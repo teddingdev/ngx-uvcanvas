@@ -13,6 +13,8 @@ import { DocInstallationComponent } from './components/doc-installation/doc-inst
 import { DocContributingComponent } from './components/doc-contributing/doc-contributing.component';
 import { DocChangelogComponent } from './components/doc-changelog/doc-changelog.component';
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
+import { DocExampleComponent } from './components/doc-example/doc-example.component';
+import { DocForestComponent } from './components/doc-forest/doc-forest.component';
 
 const routes: Routes = [
   {
@@ -70,6 +72,14 @@ const routes: Routes = [
           {
             path: 'opulento',
             component: DocOpulentoComponent,
+          },
+          {
+            path: 'forest',
+            component: DocForestComponent,
+          },
+          {
+            path: 'example',
+            component: DocExampleComponent,
           },
         ],
       },

@@ -67,7 +67,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/site/src/favicon.ico",
-              "projects/site/src/assets"
+              "projects/site/src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/ngx-uvcanvas/assets",
+                "output": "assets"
+              }
             ],
             "styles": [
               "projects/site/src/styles.scss",

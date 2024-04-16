@@ -1,3 +1,4 @@
+export * as forest from './forest/public-api';
 export * as lumiflex from './lumiflex/public-api';
 export * as novatrix from './novatrix/public-api';
 export * as opulento from './opulento/public-api';

@@ -4,5 +4,8 @@
   "deleteDestPath": true,
   "lib": {
     "entryFile": "./index.ts"
-  }
+  },
+  "assets": [
+    "./assets/**/*"
+  ]
 }

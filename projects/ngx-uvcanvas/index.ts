@@ -12,6 +12,10 @@ export * from 'ngx-uvcanvas/ui';
  */
 export * from 'ngx-uvcanvas/core';
 
+/**
+ * services
+ */
+export * from 'ngx-uvcanvas/services';
 
 /**
  * glsl file

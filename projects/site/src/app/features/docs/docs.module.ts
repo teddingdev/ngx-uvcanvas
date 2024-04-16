@@ -21,7 +21,6 @@ import { DocNovatrixComponent } from './components/doc-novatrix/doc-novatrix.com
 import { DocLumiflexComponent } from './components/doc-lumiflex/doc-lumiflex.component';
 import { DocVelustroComponent } from './components/doc-velustro/doc-velustro.component';
 import { DocTranquiluxeComponent } from './components/doc-tranquiluxe/doc-tranquiluxe.component';
-
 import { DocIntroductionComponent } from './components/doc-introduction/doc-introduction.component';
 
 const MatModules = [
@@ -41,12 +40,15 @@ import {
   OpulentoComponent,
   VelustroComponent,
   TranquiluxeComponent,
+  ForestComponent
 } from 'ngx-uvcanvas/ui';
 import { DocInstallationComponent } from './components/doc-installation/doc-installation.component';
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
 import { AllComponentsComponent } from '@components/all-components/all-components.component';
 import { DocChangelogComponent } from './components/doc-changelog/doc-changelog.component';
 import { FooterComponent } from '@components/footer/footer.component';
+import { DocExampleComponent } from './components/doc-example/doc-example.component';
+import { DocForestComponent } from './components/doc-forest/doc-forest.component';
 
 @NgModule({
   imports: [
@@ -60,8 +62,9 @@ import { FooterComponent } from '@components/footer/footer.component';
     OpulentoComponent,
     VelustroComponent,
     TranquiluxeComponent,
+    ForestComponent,
     AllComponentsComponent,
-    FooterComponent
+    FooterComponent,
   ],
   declarations: [
     DocsComponent,
@@ -76,6 +79,8 @@ import { FooterComponent } from '@components/footer/footer.component';
     DocTranquiluxeComponent,
     DocVelustroComponent,
     DocZenithoComponent,
+    DocExampleComponent,
+    DocForestComponent
   ],
 })
 export class DocsModule {}
