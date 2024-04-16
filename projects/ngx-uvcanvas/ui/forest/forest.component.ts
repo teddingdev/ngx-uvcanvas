@@ -33,7 +33,6 @@ export class ForestComponent implements AfterViewInit {
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    console.log(this.container);
     this.oglRenderForestService.appendChild(this.container);
   }
   constructor(private oglRenderForestService: OglRenderForestService) {}

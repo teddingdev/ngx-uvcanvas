@@ -119,6 +119,12 @@ export class DocNavComponent {
       activated: false,
     },
     {
+      type: 'component',
+      name: 'nuc-particles',
+      value: 'component/particles',
+      activated: false,
+    },
+    {
       type: 'separateor',
       // name: 'ChangeLog',
       name: '其他',

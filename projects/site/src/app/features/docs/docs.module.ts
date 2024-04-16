@@ -34,13 +34,14 @@ const MatModules = [
 ];
 
 import {
+  ForestComponent,
   ZenithoComponent,
   LumiflexComponent,
   NovatrixComponent,
   OpulentoComponent,
   VelustroComponent,
+  ParticlesComponent,
   TranquiluxeComponent,
-  ForestComponent,
 } from 'ngx-uvcanvas/ui';
 import { DocInstallationComponent } from './components/doc-installation/doc-installation.component';
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
@@ -50,6 +51,7 @@ import { FooterComponent } from '@components/footer/footer.component';
 import { DocExampleComponent } from './components/doc-example/doc-example.component';
 import { DocForestComponent } from './components/doc-forest/doc-forest.component';
 import { DocAuthorComponent } from './components/doc-author/doc-author.component';
+import { DocParticlesComponent } from './components/doc-particles/doc-particles.component';
 
 @NgModule({
   imports: [
@@ -57,13 +59,14 @@ import { DocAuthorComponent } from './components/doc-author/doc-author.component
     DocsRoutingModule,
     MarkdownComponent,
     ...MatModules,
+    ForestComponent,
     ZenithoComponent,
     LumiflexComponent,
     NovatrixComponent,
     OpulentoComponent,
     VelustroComponent,
+    ParticlesComponent,
     TranquiluxeComponent,
-    ForestComponent,
     AllComponentsComponent,
     FooterComponent,
   ],
@@ -83,6 +86,7 @@ import { DocAuthorComponent } from './components/doc-author/doc-author.component
     DocExampleComponent,
     DocForestComponent,
     DocAuthorComponent,
+    DocParticlesComponent,
   ],
 })
 export class DocsModule {}

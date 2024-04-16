@@ -16,6 +16,7 @@ import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-pre
 import { DocExampleComponent } from './components/doc-example/doc-example.component';
 import { DocForestComponent } from './components/doc-forest/doc-forest.component';
 import { DocAuthorComponent } from './components/doc-author/doc-author.component';
+import { DocParticlesComponent } from './components/doc-particles/doc-particles.component';
 
 const routes: Routes = [
   {
@@ -81,6 +82,10 @@ const routes: Routes = [
           {
             path: 'forest',
             component: DocForestComponent,
+          },
+          {
+            path: 'particles',
+            component: DocParticlesComponent,
           },
           {
             path: 'example',

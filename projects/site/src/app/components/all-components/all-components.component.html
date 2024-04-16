@@ -1,4 +1,12 @@
 <mat-grid-list [cols]="cols" rowHeight="2:1" [gutterSize]="gutterSize">
+  <mat-grid-tile routerLink="/docs/component/forest">
+    <nuc-forest></nuc-forest>
+    <mat-grid-tile-footer> forest </mat-grid-tile-footer>
+  </mat-grid-tile>
+  <mat-grid-tile routerLink="/docs/component/particles">
+    <nuc-particles></nuc-particles>
+    <mat-grid-tile-footer> particles </mat-grid-tile-footer>
+  </mat-grid-tile>
   <mat-grid-tile routerLink="/docs/component/lumiflex">
     <nuc-lumiflex></nuc-lumiflex>
     <mat-grid-tile-footer> lumiflex </mat-grid-tile-footer>
@@ -22,9 +30,5 @@
   <mat-grid-tile routerLink="/docs/component/opulento">
     <nuc-opulento></nuc-opulento>
     <mat-grid-tile-footer> opulento </mat-grid-tile-footer>
-  </mat-grid-tile>
-  <mat-grid-tile routerLink="/docs/component/forest">
-    <nuc-forest></nuc-forest>
-    <mat-grid-tile-footer> forest </mat-grid-tile-footer>
   </mat-grid-tile>
 </mat-grid-list>

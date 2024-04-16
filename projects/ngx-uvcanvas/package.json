@@ -1,6 +1,6 @@
 {
   "name": "ngx-uvcanvas",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An Angular component library that offers a diverse range of dynamic canvases pre-built.",
   "keywords": [
     "Angular",

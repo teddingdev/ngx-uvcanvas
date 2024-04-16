@@ -3,13 +3,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterModule } from '@angular/router';
 
 import {
+  ForestComponent,
   ZenithoComponent,
   LumiflexComponent,
   NovatrixComponent,
   OpulentoComponent,
   VelustroComponent,
+  ParticlesComponent,
   TranquiluxeComponent,
-  ForestComponent
 } from 'ngx-uvcanvas/ui';
 
 @Component({
@@ -24,6 +25,7 @@ import {
     NovatrixComponent,
     OpulentoComponent,
     VelustroComponent,
+    ParticlesComponent,
     TranquiluxeComponent,
     ForestComponent,
     RouterModule,
