@@ -3,6 +3,7 @@
 @use "@angular/material" as mat;
 @use "./styles/define-mat-theme";
 @use "./styles/markdown";
+@use "./styles/variables";
 
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
@@ -46,4 +47,31 @@ app-root {
   max-width: 100%;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.app-footer {
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background-color: variables.$primary-background-color-light;
+  @media (prefers-color-scheme: dark) {
+    background-color: variables.$primary-background-color-dark;
+  }
+  z-index: 0;
+  &::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: " ";
+    background-image: url("./assets/svg/icon_angular_wht.svg");
+    background-attachment: fixed;
+    background-size: 50px;
+    background-position: 0 52px;
+    opacity: 0.1;
+    display: block;
+    z-index: -1;
+  }
 }
