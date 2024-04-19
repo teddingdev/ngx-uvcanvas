@@ -47,11 +47,11 @@
       "sourceRoot": "projects/site/src",
       "prefix": "app",
       "architect": {
-        "copy-file": {
-          "builder": "@teddingdev/builders:copy-2",
+        "copy-assets": {
+          "builder": "./builders:copyFiles",
           "options": {
-            "source": "package.json",
-            "destination": "package-copy.json"
+            "source": "./projects/ngx-uvcanvas/assets/ngx-uvcanvas",
+            "destination": "./projects/site/src/assets/ngx-uvcanvas"
           }
         },
         "build": {
@@ -132,7 +132,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/site/src/favicon.ico",
-              "projects/site/src/assets"
+              "projects/site/src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/ngx-uvcanvas/assets",
+                "output": "assets"
+              }
             ],
             "styles": [
               "projects/site/src/styles.scss"

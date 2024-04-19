@@ -42,16 +42,17 @@ import {
   VelustroComponent,
   ParticlesComponent,
   TranquiluxeComponent,
+  LibTestComponent
 } from 'ngx-uvcanvas/ui';
 import { DocInstallationComponent } from './components/doc-installation/doc-installation.component';
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
 import { AllComponentsComponent } from '@components/all-components/all-components.component';
 import { DocChangelogComponent } from './components/doc-changelog/doc-changelog.component';
 import { FooterComponent } from '@components/footer/footer.component';
-import { DocExampleComponent } from './components/doc-example/doc-example.component';
 import { DocForestComponent } from './components/doc-forest/doc-forest.component';
 import { DocAuthorComponent } from './components/doc-author/doc-author.component';
 import { DocParticlesComponent } from './components/doc-particles/doc-particles.component';
+import { DocLibTestComponent } from './components/doc-lib-test/doc-lib-test.component';
 
 @NgModule({
   imports: [
@@ -69,6 +70,7 @@ import { DocParticlesComponent } from './components/doc-particles/doc-particles.
     TranquiluxeComponent,
     AllComponentsComponent,
     FooterComponent,
+    LibTestComponent
   ],
   declarations: [
     DocsComponent,
@@ -83,10 +85,10 @@ import { DocParticlesComponent } from './components/doc-particles/doc-particles.
     DocTranquiluxeComponent,
     DocVelustroComponent,
     DocZenithoComponent,
-    DocExampleComponent,
     DocForestComponent,
     DocAuthorComponent,
     DocParticlesComponent,
+    DocLibTestComponent
   ],
 })
 export class DocsModule {}

@@ -6,3 +6,4 @@ export * as opulento from './opulento/public-api';
 export * as velustro from './velustro/public-api';
 export * as particles from './particles/public-api';
 export * as tranquiluxe from './tranquiluxe/public-api';
+export * as example from './lib-test/public-api';

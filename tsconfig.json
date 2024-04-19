@@ -12,18 +12,19 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    // "paths": {
-    //   "ngx-uvcanvas": [
-    //     "dist/ngx-uvcanvas"
-    //   ],
-    // },
     "paths": {
       "ngx-uvcanvas": [
-        "./project/ngx-uvcanvas"
+        "dist/ngx-uvcanvas"
       ],
       "ngx-uvcanvas/*": [
-        "./project/ngx-uvcanvas/*"
+        "dist/ngx-uvcanvas/*"
       ],
+      // "ngx-uvcanvas": [
+      //   "./project/ngx-uvcanvas"
+      // ],
+      // "ngx-uvcanvas/*": [
+      //   "./project/ngx-uvcanvas/*"
+      // ],
       "@services/*": [
         "./projects/site/src/app/services/*"
       ],

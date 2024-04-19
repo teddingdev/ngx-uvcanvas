@@ -6,3 +6,4 @@ export * from './opulento';
 export * from './velustro';
 export * from './particles';
 export * from './tranquiluxe';
+export * from './lib-test';

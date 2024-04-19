@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --disable-host-check",
+    "start": "npm run build:builders && npm run copy:assets && ng serve --host 0.0.0.0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:site": "node dist/site/server/server.mjs"
+    "serve:ssr:site": "node dist/site/server/server.mjs",
+    "build:builders": "cd builders && npm i && npm run build",
+    "copy:assets": "ng run site:copy-assets"
   },
   "private": true,
   "dependencies": {
@@ -26,7 +28,6 @@
     "express": "^4.18.2",
     "marked": "^9.1.6",
     "ngx-markdown": "^17.2.0",
-    "ngx-uvcanvas": "file:dist/ngx-uvcanvas",
     "ogl": "^1.0.6",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
@@ -37,6 +38,7 @@
     "@angular-devkit/build-angular": "^17.3.3",
     "@angular/cli": "^17.3.3",
     "@angular/compiler-cli": "^17.3.3",
+    "@ngx-uvcanvas/builders": "file:builders",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",

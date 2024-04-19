@@ -1,14 +1,9 @@
 {
   "builders": {
-    "copy": {
-      "implementation": "./dist/copy-file/index.js",
-      "schema": "./src/copy-file/schema.json",
-      "description": "Copies a file."
-    },
-    "copy-2": {
-      "implementation": "./dist/copy-file-2/index.js",
-      "schema": "./src/copy-file-2/schema.json",
-      "description": "Copies a file."
+    "copyFiles": {
+      "implementation": "./dist/index.js",
+      "schema": "./src/copy-files/schema.json",
+      "description": "Copy files."
     }
   }
 }

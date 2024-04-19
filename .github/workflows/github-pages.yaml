@@ -40,6 +40,7 @@ jobs:
       - name: Build
         run: |
           cd ${{ env.BRANCH_SOURCE }}
+          npm run build:builders
           npm install
           npm run build ngx-uvcanvas
           npm run build site

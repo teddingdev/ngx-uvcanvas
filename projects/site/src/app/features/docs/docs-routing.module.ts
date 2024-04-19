@@ -13,10 +13,10 @@ import { DocInstallationComponent } from './components/doc-installation/doc-inst
 import { DocContributingComponent } from './components/doc-contributing/doc-contributing.component';
 import { DocChangelogComponent } from './components/doc-changelog/doc-changelog.component';
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
-import { DocExampleComponent } from './components/doc-example/doc-example.component';
 import { DocForestComponent } from './components/doc-forest/doc-forest.component';
 import { DocAuthorComponent } from './components/doc-author/doc-author.component';
 import { DocParticlesComponent } from './components/doc-particles/doc-particles.component';
+import { DocLibTestComponent } from './components/doc-lib-test/doc-lib-test.component';
 
 const routes: Routes = [
   {
@@ -88,8 +88,8 @@ const routes: Routes = [
             component: DocParticlesComponent,
           },
           {
-            path: 'example',
-            component: DocExampleComponent,
+            path: 'lib-test',
+            component: DocLibTestComponent,
           },
         ],
       },

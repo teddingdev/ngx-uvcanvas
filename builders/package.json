@@ -1,13 +1,17 @@
 {
-  "name": "@teddingdev/builders",
+  "name": "@ngx-uvcanvas/builders",
   "version": "1.0.0",
-  "description": "Builder for copying files",
+  "description": "Builder for copying assets files from lib",
   "builders": "builders.json",
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json"
   },
   "dependencies": {
     "@angular-devkit/architect": "^0.1702.3",
     "@angular-devkit/core": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7"
   }
 }
