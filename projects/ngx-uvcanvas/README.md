@@ -41,6 +41,7 @@ import {
   VelustroComponent,
   ParticlesComponent,
   TranquiluxeComponent,
+  HexBeatComponent
 } from 'ngx-uvcanvas/ui';
 ```
 
@@ -54,6 +55,8 @@ import {
   - add `<nuc-forest>` feature component
 - v0.1.2 [2024-04-17]
   - add `<nuc-particles>` feature component
+- v0.1.3 [2024-04-28]
+  - add `<nuc-hex-beat>` feature component
 
 | component       | status | version |
 | --------------- | ------ | ------- |
@@ -65,3 +68,4 @@ import {
 | nuc-opulento    | ✅     | v0.1.0  |
 | nuc-forest      | ✅     | v0.1.1  |
 | nuc-particles   | ✅     | v0.1.2  |
+| nuc-hex-beat    | ✅     | v0.1.3  |
