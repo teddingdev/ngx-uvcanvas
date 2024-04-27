@@ -17,6 +17,7 @@ import { DocForestComponent } from './components/doc-forest/doc-forest.component
 import { DocAuthorComponent } from './components/doc-author/doc-author.component';
 import { DocParticlesComponent } from './components/doc-particles/doc-particles.component';
 import { DocLibTestComponent } from './components/doc-lib-test/doc-lib-test.component';
+import { DocHexBeatComponent } from './components/doc-hex-beat/doc-hex-beat.component';
 
 const routes: Routes = [
   {
@@ -86,6 +87,10 @@ const routes: Routes = [
           {
             path: 'particles',
             component: DocParticlesComponent,
+          },
+          {
+            path: 'hex-beat',
+            component: DocHexBeatComponent,
           },
           {
             path: 'lib-test',

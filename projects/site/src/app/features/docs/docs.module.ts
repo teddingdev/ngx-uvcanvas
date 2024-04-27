@@ -42,7 +42,9 @@ import {
   VelustroComponent,
   ParticlesComponent,
   TranquiluxeComponent,
-  LibTestComponent
+  LibTestComponent,
+  HexBeatComponent
+
 } from 'ngx-uvcanvas/ui';
 import { DocInstallationComponent } from './components/doc-installation/doc-installation.component';
 import { DocAllPreviewComponent } from './components/doc-all-preview/doc-all-preview.component';
@@ -53,6 +55,7 @@ import { DocForestComponent } from './components/doc-forest/doc-forest.component
 import { DocAuthorComponent } from './components/doc-author/doc-author.component';
 import { DocParticlesComponent } from './components/doc-particles/doc-particles.component';
 import { DocLibTestComponent } from './components/doc-lib-test/doc-lib-test.component';
+import { DocHexBeatComponent } from './components/doc-hex-beat/doc-hex-beat.component';
 
 @NgModule({
   imports: [
@@ -70,7 +73,8 @@ import { DocLibTestComponent } from './components/doc-lib-test/doc-lib-test.comp
     TranquiluxeComponent,
     AllComponentsComponent,
     FooterComponent,
-    LibTestComponent
+    LibTestComponent,
+    HexBeatComponent
   ],
   declarations: [
     DocsComponent,
@@ -88,7 +92,8 @@ import { DocLibTestComponent } from './components/doc-lib-test/doc-lib-test.comp
     DocForestComponent,
     DocAuthorComponent,
     DocParticlesComponent,
-    DocLibTestComponent
+    DocLibTestComponent,
+    DocHexBeatComponent,
   ],
 })
 export class DocsModule {}

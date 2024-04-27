@@ -125,6 +125,12 @@ export class DocNavComponent {
       activated: false,
     },
     {
+      type: 'component',
+      name: 'nuc-hex-beat',
+      value: 'component/hex-beat',
+      activated: false,
+    },
+    {
       type: 'separateor',
       // name: 'ChangeLog',
       name: '其他',

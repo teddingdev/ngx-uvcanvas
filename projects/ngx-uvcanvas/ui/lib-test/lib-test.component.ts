@@ -23,5 +23,6 @@ export class LibTestComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.oglRenderService.appendChild(this.container);
   }
+
   constructor(private oglRenderService: OglRenderService) {}
 }

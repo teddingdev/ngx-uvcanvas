@@ -1,5 +1,5 @@
-export const frag =
-`#version 300 es
+export function createFragment(sqrt = '1.732', scale = '10.0'): string {
+  return `#version 300 es
 precision highp float;
 
 uniform float uTime;
@@ -14,8 +14,8 @@ out vec4 fragColor;
 //     - https://www.shadertoy.com/user/BigWIngs
 
 float myArray[5];
-float sqrt3 = 1.732;
-float scale = 10.0;
+float sqrt = ${sqrt};
+float scale = ${scale};
 
 vec3 colors[4]=vec3[4](
                   // vec3(255.0, 218.0, 169.0) * (1.0 / 255.0), // yellow
@@ -33,7 +33,7 @@ float HexDist(vec2 p){
     p = abs(p);
 
     float rightEdge = p.x;
-    float upperRightEdge = dot(p, normalize(vec2(1.0, sqrt3)));
+    float upperRightEdge = dot(p, normalize(vec2(1.0, ${sqrt})));
     return max(rightEdge, upperRightEdge);
 }
 
@@ -52,7 +52,7 @@ void main()
     uv.x += uTime + 5.0;
 
     vec2 uvScaled = uv * scale;
-    vec2 gridScale = vec2(1.0, sqrt3);
+    vec2 gridScale = vec2(1.0, ${sqrt});
     vec2 a = (mod(uvScaled, gridScale) - 0.5 * gridScale);
     vec2 b = (mod(uvScaled + 0.5*gridScale, gridScale) - 0.5 * gridScale);
 
@@ -71,3 +71,4 @@ void main()
     fragColor = vec4(col,1.0);
 }
 `;
+}

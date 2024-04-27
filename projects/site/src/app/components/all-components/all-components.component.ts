@@ -11,6 +11,8 @@ import {
   VelustroComponent,
   ParticlesComponent,
   TranquiluxeComponent,
+  HexBeatComponent,
+  LibTestComponent,
 } from 'ngx-uvcanvas/ui';
 
 @Component({
@@ -28,6 +30,8 @@ import {
     ParticlesComponent,
     TranquiluxeComponent,
     ForestComponent,
+    HexBeatComponent,
+    LibTestComponent,
     RouterModule,
   ],
 })
