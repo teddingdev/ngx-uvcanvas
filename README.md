@@ -8,7 +8,7 @@
 ## Preview
 ![Screenshot.png](./projects/site/src/assets/png/Screenshot.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
 ## Development server
 
